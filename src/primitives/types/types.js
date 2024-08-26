@@ -110,7 +110,7 @@ const _Types = {
           value = [value];
         }
 
-        const l = (target.length = size ? size : value.length);
+        const l = (target.length === size ? size : value.length);
         for (
           let i = 0, end = l, asc = 0 <= end;
           asc ? i < end : i > end;
